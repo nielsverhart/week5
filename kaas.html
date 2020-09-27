@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<script>  
+		var kleur = prompt("Is de kaas geel?");
+		if (kleur == "ja") {
+			// Dit wordt alleen uitgevoerd als het antwoord ja is
+			var gaten = prompt("Zitten er gaten in?");
+			if (gaten == "ja"){
+				var duur = prompt("Is de kaas balchelijk duur?");
+				if (duur == "ja") {
+					alert ("Emmenthaler");
+
+				} else {
+					alert ("Leerdammer");
+				}
+
+
+			} else {
+				//dit is de code voor antwoord nee
+				var hard = prompt ("Is de kaas hard als steen?");
+				if (hard == "ja"){
+					alert ("Pammigiano Reggiano");
+				} else {
+					alert ("Goudse Kaas");
+				}
+
+
+
+			}
+
+			} else {
+				var schimmels = prompt ("Heeft de kaas blauwe schimmels?")
+				if (schimmels == "ja"){
+
+					var korst = prompt ("Heeft de kaas een kaas een korst?");	
+				if (korst == "ja"){
+					alert ("Blue de Rochbaron");
+				} 
+				else{
+					alert ("Foume d'ambert");
+				}
+
+
+			} else {
+				var korst = prompt ("Heeft de kaas een korst");
+				if (korst == "ja"){
+					alert("Camembert"); 
+				} else {
+					alert ("Mozzarella");
+				}
+
+			}
+		}
+
+
+
+	</script>
+</body>
+</html>

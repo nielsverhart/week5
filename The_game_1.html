@@ -1,0 +1,136 @@
+<!DOCTYPE html>	
+<html>
+<body>
+	<script type="text/javascript">
+		
+		alert ("Welkom bij mijn game! In deze game is het de bedoeling om het spel te winnen. Onderweg naar de overwinning zullen er verschillende obstakels zijn die zullen proberen jou te doden! In deze game kom je atributten tegen die het makkelijker zullen maken om de baas te verslaan!");
+		
+		var verloren = 'Ja';
+
+
+		console.log("We gaan beginnen. start van programma.");
+
+			var world = prompt (" Kies uw wereld! Keuze uit: aarde, mars.")
+			world = world.toLowerCase();
+		if (world == "aarde")
+		{
+			//hier alle code invoeren behorend bij aarde
+				console.log("Game - Aarde");
+				alert ("Je hebt gekozen voor aarde!, Je bent zojuist geland!");	
+
+				var shoes = prompt ("Hey, daar liggen 2 schoenen! Wil je deze aantrekken? (ja of nee)")
+				shoes = shoes.toLowerCase();
+			if (shoes == "ja")
+			{
+				console.log("Game - schoenen aantrekken, ja");
+				alert ("Je trekt de schoenen aan. Dat is heel verstandig! Dit zal je helpen deze grote afstanden af te leggen!");
+			}   else if (shoes == "nee") {
+				console.log("Game - schoenen aantrekken, nee");
+				alert ("Je trekt de schoenen niet aan! Eigen keus. Ik hoop dat je veel eelt onder je voeten heb!");
+			}	else {
+				alert ("Je hebt geen ja of nee gekozen.")
+			}
+
+			//hier komt de code voor het zwaard
+
+			var sword = prompt ("Daar is je eerste tegenstander! Wil je je zwaard gebruiken? (ja of nee)")
+				sword = sword.toLowerCase();
+				console.log("Game - zwaarde keuze (ja)");
+			
+			if (sword == "ja")
+			{
+				alert ("Heel goed! Je hebt je tegenstander verslagen en hebt de game gewonnen, gefeliciteerd!");
+				verloren = 'Nee';
+				console.log("Game - zwaarde keuze (nee - verloren)");
+			} 	else {
+				alert ("Oei! Dat ging niet zo goed! De tegenstander heeft je verslagen.");
+				verloren = 'Ja';
+			}
+		}
+
+			else if (world == "mars")
+		
+		{
+			console.log("Game - Mars");
+			
+				var food = prompt ("Daar liggen 10 kokosnoten! Je heb echter maar plek voor 2. Wil je deze meenemen? ja of nee.")
+			if (food == "nee") {
+				console.log("Game - kokosnoten meenemen = nee");
+				alert("Je neemt geen kokosnoten mee! Hopelijk vind je ergens anders nog iets te drinken.");
+			}
+		
+			if (food == "ja") {
+				console.log("Game - kokosnoten meenemen, hoeveel");
+				var amount =  prompt ("Hoeveel kokosnoten wil je meenemen?")
+			}
+		
+			if (amount < 1) {	
+				console.log("Game - kokosnoten meenemen < 1");
+				alert ("Je neemt geen kokosnoten mee!");
+			} else if (amount < 2) {
+				console.log("Game - kokosnoten meenemen < 2");
+				alert ("Je neemt 1 kokosnoot mee!")
+			} else if (amount > 2) {
+				console.log("Game - kokosnoten meenemen > 2");
+				alert ("Dat gaat niet! Hier heb je geen plek voor!");
+			} else {
+				console.log("Game - kokosnoten meenemen (else waarde) = 2");
+				alert ("Top! Je hebt er voor gekozen 2 kokosnoten mee te nemen!");
+			}	
+		
+				shield = shield.toLowerCase();
+				var shield = prompt ("Daar ligt een groot stuk hout! Wil je dit oppakken om als schild te gebruiken? ja of nee")
+				console.log("Game - stuk hout meenemen");
+			if (shield == "ja")
+			{
+				alert ("Je hebt ervoor gekozen het schild mee te nemen!");
+			} else if (shield == "nee")
+			{ 	console.log("Game - Schild meenemen - nee");
+				alert ("Je neemt het schild niet mee en zal sneller dood gaan!");	
+			}
+				console.log("Game - Mars, mes gevonden.");
+			
+			var knife = prompt ("Je hebt een mes gevonden! Wil je deze meenemen? ja of nee?")
+			
+			
+			if (knife == "ja")
+			{	alert("Je neemt het mes mee! Dit kan van pas komen!");
+				eindbaas = eindbaas.toLowerCase();
+				var eindbaas = prompt ("Daar is de eindbaas! Wil je je mes gebruiken om hem te doden? ja of nee");
+			if (eindbaas == "ja")
+				{
+				alert ("Gefeliciteerd! De eindbaas is dood!");
+				verloren = 'Nee';
+			} else if (eindbaas == "nee") {
+				alert ("Ja joh. Gemiste kans. Je had hem kunnen doden!");
+				verloren = 'Ja';
+				}
+			} 
+			else if (knife == "nee")
+			{
+				alert ("Helaas! Zonder dit mes kan je de baas niet verslaan!");
+					verloren = 'Ja';
+			}
+
+	    } 	else
+	    	{
+	    		console.log("Game - Je hebt aan het begin geen aarde of mars gekozen");
+	    		//Game - Je hebt aan het begin geen aarde of mars gekozen
+				alert ("Je hebt geen aarde of mars gekozen. Programma wordt beeindigd.");
+			}
+
+	//einde applicatie, laatste weergave
+
+				console.log("Game - Uitslag weergeven");
+
+			if (verloren == "Ja")
+			{
+				alert ("Je hebt verloren");
+			} else
+			{
+				alert ("Je hebt gewonnen");
+			}	
+				
+	</script>
+</body>
+</html>	
